@@ -24,9 +24,11 @@
       margin-top: 20px;
       font-size: 2.5rem;
     }
-    p {
-      font-size: 1.2rem;
+    .mission {
+      font-size: 1.3rem;
       color: #ccc;
+      margin: 1.2em 0;
+      line-height: 1.6;
     }
     .section {
       padding: 60px 20px;
@@ -38,13 +40,25 @@
     .contact {
       background: #111825;
     }
-  </style>
+  
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeIn 1.2s ease-out both;
+    }
+    </style>
+    
 </head>
 <body>
   <header>
     <img src="AtticarRealityLogo.png" alt="Atticar Reality Logo" />
     <h1>Atticar Reality</h1>
-    <p>Powerful developer tooling for Unity, VR, and AI-driven games.</p>
+    <div class="mission fade-in">
+      Exploring generative AI through gameplay.<br />
+      Creating new types of gameplay through generative AI.
+    </div>
   </header>
 
   <div class="section">
@@ -56,6 +70,7 @@
       <li>✓ Procedural Animation & IK Systems for VR</li>
       <li>✓ XR-ready frameworks for Meta Quest</li>
     </ul>
+    <p><a href="tools.html">See Our Tools →</a></p>
   </div>
 
   <div class="section contact">
